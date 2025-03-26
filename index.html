@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRAF - Collectif des Ressortissants et Amis de Fria </title>
+    <meta name="description" content="Collectif des Ressortissants et Amis de Fria (CRAF) œuvre pour le développement durable et l'amélioration des conditions de vie à Fria.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsives.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="2.jpeg" alt="Logo CRAF">
+                    <span>CRAF</span>
+                </a>
+            </div>
+
+            <button class="toggle-menu" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="projects.html">Projets</a></li>
+                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="news.html">Actualités</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Diaporama héro -->
+    <section class="hero-slideshow">
+        <div class="slides">
+            <div class="slide active">
+                <div class="slide-bg"></div>
+                <div class="slide-content">
+                    <h2 class="animated-title">Bienvenue à CRAF</h2>
+                    <p>Ensemble pour le développement durable de Fria</p>
+                    <div class="slide-buttons">
+                        <a href="about.html" class="about-btn">Découvrir</a>
+                        <a href="contact.html" class="about-btn">Nous contacter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-bg"></div>
+                <div class="slide-content">
+                    <h2>Nos projets communautaires</h2>
+                    <p>Améliorer les conditions de vie à Fria</p>
+                    <div class="slide-buttons">
+                        <a href="projects.html" class="about-btn">Voir nos projets</a>
+                        <a href="gallery.html" class="about-btn">Galerie photos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-bg"></div>
+                <div class="slide-content">
+                    <h2>Éducation pour tous</h2>
+                    <p>Investir dans l'avenir de notre jeunesse</p>
+                    <div class="slide-buttons">
+                        <a href="projects.html#education" class="about-btn">Nos initiatives</a>
+                        <a href="contact.html" class="about-btn">Participer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text slide-in-left">
+                    <h1>Bienvenue chez CRAF !</h1>
+                    <h2>Qui sommes-nous ?</h2>
+                    <p>CRAF Le Collectif des Ressortissants et Amis de Fria (CRAF)</p>
+                    <p>Le CRAF est une organisation à but non lucratif fondée en 2021 par des ressortissants de Fria soucieux de contribuer au développement de leur région d'origine.</p>
+                    <p>Notre mission est de mobiliser les ressources humaines, matérielles et financières pour mettre en œuvre des projets de développement durable qui répondent aux besoins réels des populations de Fria.</p>
+                    <a href="about.html" class="about-btn">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="about-image slide-in-right">
+                    <img src="mamadi.jpg" alt="Membres de l'ONRG lors d'une réunion communautaire">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nos objectifs -->
+    <section class="objectives">
+        <div class="container">
+            <div class="section-title-3d">
+                <h2>Nos objectifs</h2>
+                <p>Travailler ensemble pour un avenir meilleur</p>
+            </div>
+
+            <div class="objectives-grid">
+                <div class="objective-card fade-in">
+                    <div class="objective-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Solidarité</h3>
+                    <p>Renforcer les liens de solidarité entre les ressortissants de Fria et mobiliser les ressources pour soutenir le développement local.</p>
+                </div>
+
+                <div class="objective-card fade-in">
+                    <div class="objective-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Éducation</h3>
+                    <p>Promouvoir l'accès à une éducation de qualité pour tous les enfants et jeunes de Fria à travers des bourses et l'amélioration des infrastructures scolaires.</p>
+                </div>
+
+                <div class="objective-card fade-in">
+                    <div class="objective-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3>Santé</h3>
+                    <p>Améliorer l'accès aux soins de santé par la construction et la rénovation de centres de santé et l'organisation de campagnes de sensibilisation.</p>
+                </div>
+
+                <div class="objective-card fade-in">
+                    <div class="objective-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Environnement</h3>
+                    <p>Protéger l'environnement et promouvoir des pratiques durables pour préserver les ressources naturelles de Fria pour les générations futures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nos services -->
+    <section class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos services</h2>
+                <p>Comment nous intervenons pour le développement de Fria</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card zoom-in">
+                    <img src="2.jpeg" alt="Gestion de projets">
+                    <div class="service-content">
+                        <h3>Gestion de projets</h3>
+                        <p>Nous concevons, planifions et mettons en œuvre des projets de développement adaptés aux besoins locaux.</p>
+                    </div>
+                </div>
+
+                <div class="service-card zoom-in">
+                    <img src="2.jpeg" alt="Collecte de fonds">
+                    <div class="service-content">
+                        <h3>Collecte de fonds</h3>
+                        <p>Nous mobilisons des ressources financières auprès de partenaires nationaux et internationaux pour soutenir nos projets.</p>
+                    </div>
+                </div>
+
+                <div class="service-card zoom-in">
+                    <img src="2.jpeg" alt="Formation">
+                    <div class="service-content">
+                        <h3>Formation</h3>
+                        <p>Nous organisons des sessions de formation pour renforcer les capacités des acteurs locaux dans divers domaines.</p>
+                    </div>
+                </div>
+
+                <div class="service-card zoom-in">
+                    <img src="2.jpeg" alt="Plaidoyer">
+                    <div class="service-content">
+                        <h3>Plaidoyer</h3>
+                        <p>Nous défendons les intérêts de la population de Fria auprès des autorités et des partenaires au développement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistiques -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number">
+                        <span class="counter" data-target="1500">0</span>+
+                    </div>
+                    <div class="stat-title">Membres</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-number">
+                        <span class="counter" data-target="45">0</span>
+                    </div>
+                    <div class="stat-title">Projets réalisés</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="stat-number">
+                        <span class="counter" data-target="25">0</span>
+                    </div>
+                    <div class="stat-title">Partenaires</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-globe-africa"></i>
+                    </div>
+                    <div class="stat-number">
+                        <span class="counter" data-target="30000">0</span>+
+                    </div>
+                    <div class="stat-title">Bénéficiaires</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets récents -->
+    <section class="recent-projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos projets récents</h2>
+                <p>Découvrez nos dernières réalisations à Fria</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="2.jpeg" alt="Projet d'accès à l'eau potable">
+                        <div class="project-category">Infrastructure</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Accès à l'eau potable</h3>
+                        <p>Construction de 5 puits et installation de systèmes de filtration d'eau dans les villages environnants de Fria.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar-alt"></i> 2023</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Fria</span>
+                        </div>
+                        <a href="projects.html" class="about-btn">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="2.jpeg" alt="Rénovation d'école">
+                        <div class="project-category">Éducation</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Rénovation d'école</h3>
+                        <p>Réhabilitation complète de l'école primaire de Tormelin, incluant de nouvelles salles de classe et du matériel pédagogique.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar-alt"></i> 2022</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Tormelin</span>
+                        </div>
+                        <a href="projects.html" class="about-btn">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="2.jpeg" alt="Centre de santé communautaire">
+                        <div class="project-category">Santé</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Centre de santé communautaire</h3>
+                        <p>Construction et équipement d'un centre de santé communautaire offrant des soins de base et des services de maternité.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar-alt"></i> 2022</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Fria</span>
+                        </div>
+                        <a href="projects.html" class="about-btn">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="projects.html" class="about-btn">Voir tous nos projets</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Témoignages</h2>
+                <p>Ce que disent les bénéficiaires de nos projets</p>
+            </div>
+
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Grâce au projet d'accès à l'eau potable de CRAF, notre village a maintenant un puits qui fournit de l'eau propre. Nos enfants sont en meilleure santé et les femmes n'ont plus à parcourir de longues distances pour chercher de l'eau."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="2.jpeg" alt="Mariama Camara">
+                        <div class="author-info">
+                            <h3>Mariama Camara</h3>
+                            <p>Villageoise, Tormelin</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"La rénovation de notre école a complètement changé l'environnement d'apprentissage. Les élèves sont plus motivés et les résultats scolaires se sont nettement améliorés. Merci au CRAF pour cet investissement dans l'avenir de nos enfants."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="2.jpeg" alt="Ibrahim Diallo">
+                        <div class="author-info">
+                            <h3>Ibrahim Diallo</h3>
+                            <p>Directeur d'école, Fria</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Le centre de santé communautaire a sauvé de nombreuses vies dans notre communauté. Les femmes enceintes peuvent maintenant accoucher dans de bonnes conditions et les malades reçoivent des soins de qualité sans avoir à se déplacer vers la ville."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="2.jpeg" alt="Dr. Fatou Sylla">
+                        <div class="author-info">
+                            <h3>Dr. Fatou Sylla</h3>
+                            <p>Médecin, Centre de santé de Fria</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Actualités -->
+    <section class="news">
+        <div class="container">
+            <div class="section-title">
+                <h2>Actualités</h2>
+                <p>Restez informés de nos dernières activités</p>
+            </div>
+
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="bancs.jpg" alt="Inauguration du centre de santé">
+                        <div class="news-date">
+                            <span class="day">15</span>
+                            <span class="month">Mai</span>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <h3>Inauguration du nouveau centre de santé communautaire</h3>
+                        <p>Le nouveau centre de santé communautaire de Fria a été officiellement inauguré en présence des autorités locales et des partenaires...</p>
+                        <a href="news.html" class="about-btn">Lire la suite <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="bancs.jpg" alt="Distribution de fournitures scolaires">
+                        <div class="news-date">
+                            <span class="day">03</span>
+                            <span class="month">Avr</span>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <h3>Distribution de fournitures scolaires à 500 élèves</h3>
+                        <p>Dans le cadre de notre programme d'appui à l'éducation, CRAF a procédé à la distribution de kits scolaires complets à 500 élèves...</p>
+                        <a href="news.html" class="about-btn">Lire la suite <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="bancs.jpg" alt="Signature de partenariat">
+                        <div class="news-date">
+                            <span class="day">20</span>
+                            <span class="month">Mar</span>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <h3>Signature d'un partenariat avec l'UNICEF</h3>
+                        <p>Le CRAF a signé un important partenariat avec l'UNICEF pour la mise en œuvre d'un programme d'amélioration de l'accès à l'eau potable...</p>
+                        <a href="news.html" class="about-btn">Lire la suite <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="news.html" class="about-btn">Toutes les actualités</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rejoignez-nous -->
+    <section class="join-us">
+        <div class="container">
+            <div class="join-us-content">
+                <h2>Rejoignez notre mission</h2>
+                <p>Ensemble, nous pouvons faire la différence pour Fria et ses habitants. Rejoignez CRAF en tant que membre, bénévole ou partenaire et contribuez à nos projets de développement.</p>
+                <div class="join-buttons">
+                    <a href="about.html#membership" class="btn-primary">Devenir membre</a>
+                    <a href="contact.html" class="about-btn">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Restez informés</h2>
+                <p>Abonnez-vous à notre newsletter pour recevoir les dernières nouvelles et mises à jour sur nos projets.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre adresse email" required>
+                    <button type="submit" class="about-btn">S'abonner <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Widget de chat -->
+    <div id="chatWidget" class="chat-widget">
+        <div class="chat-header">
+            <h3>Discussion en direct</h3>
+            <button class="about-btn"><i class="fas fa-times">Tchat</i></button>
+        </div>
+        <div id="chatMessages" class="chat-messages">
+            <div class="message system">
+                <p>Bonjour ! Comment pouvons-nous vous aider aujourd'hui ?</p>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Tapez votre message...">
+            <button id="sendMessage" class="about-btn"><i class="fas fa-paper-plane">Envoyer</i></button>
+        </div>
+    </div>
+
+    <button class="chat-toggle">
+        <i class="fas fa-comments">Comments</i>
+    </button>
+
+    <!-- Bouton de défilement vers le haut -->
+    <button class="scroll-top">
+        <i class="fas fa-arrow-up">Scroll</i>
+    </button>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="2.jpeg" alt="Logo craf">
+                        <span>CRAF</span>
+                    </div>
+                    <p>Collectif des Ressortissants et Amis de Fria (CRAF) en Guinée œuvre pour le développement durable et l'amélioration des conditions de vie à Fria.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="projects.html">Projets</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="news.html">Actualités</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-projects">
+                    <h3>Nos projets</h3>
+                    <ul>
+                        <li><a href="projects.html#education">Éducation</a></li>
+                        <li><a href="projects.html#health">Santé</a></li>
+                        <li><a href="projects.html#water">Eau et assainissement</a></li>
+                        <li><a href="projects.html#agriculture">Agriculture</a></li>
+                        <li><a href="projects.html#environment">Environnement</a></li>
+                        <li><a href="projects.html#infrastructure">Infrastructure</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Siège social:  Fria, Guinée</li>
+                        <li><i class="fas fa-phone"></i> +224 622 33 44 55</li>
+                        <li><i class="fas fa-envelope"></i> contact@craf-guinee.org</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 CRAF - Collectif des Ressortissants de Fria en Guinée. Par YATTARA Ousmane Tous droits réservés.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Politique de confidentialité</a>
+                    <a href="terms.html">Conditions d'utilisation</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/men.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/animation-menu.js"></script>
+    <script src="js/3d-title.js"></script>
+
+    <!-- Animation GSAP pour le titre -->
+    <script>
+        gsap.to("h1", { duration: 1.5, opacity: 1, y: 0, ease: "power3.out" });
+    </script>
+
+    <!-- Three.js pour les particules 3D -->
+    <script>
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        // Création des particules
+        const particlesGeometry = new THREE.BufferGeometry();
+        const particlesCount = 500;
+        const positions = new Float32Array(particlesCount * 3);
+        for (let i = 0; i < particlesCount * 3; i++) {
+            positions[i] = (Math.random() - 0.5) * 10;
+        }
+        particlesGeometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+
+        const particlesMaterial = new THREE.PointsMaterial({ color: 0xffffff, size: 0.05 });
+        const particles = new THREE.Points(particlesGeometry, particlesMaterial);
+        scene.add(particles);
+
+        camera.position.z = 5;
+
+        function animate() {
+            requestAnimationFrame(animate);
+            particles.rotation.y += 0.002;
+            renderer.render(scene, camera);
+        }
+        animate();
+    </script>
+</body>
+</html>
