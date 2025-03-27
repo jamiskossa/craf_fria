@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - CRAF</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Effet de particules en arrière-plan -->
+    <div id="particles-background"></div>
+
+    <!-- Header avec logo 3D et menu responsive -->
+    <header>
+        <div class="logo-container">
+            <div class="logo-3d-cube">
+                <div class="cube">
+                    <div class="face front"></div>
+                    <div class="face back"></div>
+                    <div class="face right"></div>
+                    <div class="face left"></div>
+                    <div class="face top"></div>
+                    <div class="face bottom"></div>
+                </div>
+            </div>
+            <h1>CRAF</h1>
+        </div>
+        <nav>
+            <div class="toggle-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html" class="active">À propos</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="blog.html">Actualités</a></li>
+                <li><a href="events.html">Événements</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="membership.html" class="btn-primary">Adhérer</a></li>
+                <li><a href="donation.html" class="btn-secondary">Faire un don</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Bannière À propos -->
+    <section class="about-banner">
+        <div class="about-banner-content">
+            <h1 class="animated-title">À propos du CRAF</h1>
+            <p>Découvrez notre histoire, notre mission et notre vision pour Fria</p>
+        </div>
+    </section>
+
+    <!-- Section Qui sommes-nous -->
+    <section class="who-we-are">
+        <div class="container">
+            <div class="section-title-3d">
+                <h2>Qui sommes-nous ?</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Le <strong>Collectif des Ressortissants et Amis de Fria (CRAF)</strong> est une association à but non lucratif créée par des personnes originaires de Fria et des sympathisants désireux de contribuer au développement de cette ville guinéenne.</p>
+                    <p>Notre collectif rassemble des personnes de tous horizons, unies par un objectif commun : redonner à Fria sa splendeur d'antan et améliorer les conditions de vie de ses habitants.</p>
+                    <p>Fondé en 2021, le CRAF s'est progressivement développé pour devenir un acteur majeur de la solidarité envers Fria, menant des projets concrets dans les domaines de l'éducation, la santé, l'accès à l'eau potable et le développement économique local.</p>
+                </div>
+                <div class="about-image">
+                    <img src="2.png" alt="L'équipe du CRAF">
+                </div>
+            </div>
+        </div>
+        <!-- Mission et vision -->
+    <div class="mission-vision">
+        <div class="container">
+            <div class="mission-vision-grid">
+                
+                <div class="vision-card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h2>Notre vision</h2>
+                    <p>Une région de Fria prospère, où chaque habitant a accès à une éducation de qualité, à des soins de santé adéquats, à l'eau potable et à un environnement sain, et où les communautés sont autonomes et participent activement à leur propre développement.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    
+
+    <!-- Section Histoire de Fria -->
+    <section class="fria-history">
+        <div class="container">
+            <div class="section-title">
+                <h2>Fria, le Petit Paris de Guinée</h2>
+            </div>
+            <div class="history-content">
+                <div class="history-text">
+                    <p>Fria, jadis surnommée "Le Petit Paris de Guinée", est une ville située au nord-ouest de la Guinée. Fondée dans les années 1950 par la société française Pechiney, elle était un modèle de cité industrielle moderne en Afrique de l'Ouest.</p>
+                    <p>La ville s'est développée autour de l'usine d'alumine Friguia, l'une des plus importantes d'Afrique à l'époque. Dotée d'infrastructures modernes, d'un système d'approvisionnement en eau et en électricité fiable, d'écoles, d'hôpitaux et de centres de loisirs, Fria était une vitrine de modernité.</p>
+                    <p>Malheureusement, au fil des décennies, la ville a connu un déclin progressif dû à divers facteurs économiques et politiques. L'usine a connu des périodes d'arrêt, les infrastructures se sont dégradées, et les services publics se sont détériorés.</p>
+                    <p>Aujourd'hui, Fria est confrontée à de nombreux défis : infrastructures vétustes, accès limité à l'eau potable et à l'électricité, services de santé insuffisants et opportunités économiques réduites pour sa population.</p>
+                </div>
+                <div class="history-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1sppvCmpV5c" title="Histoire de Fria" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Section Notre mission -->
+    <section class="our-mission">
+        <div class="container">
+            <div class="section-title-3d">
+                <h2>Notre mission</h2>
+            </div>
+            <div class="mission-content">
+                <div class="logo-container">
+                    <div class="logo-3d-cube">
+                        <div class="cube">
+                            <div class="face front"></div>
+                            <div class="face back"></div>
+                            <div class="face right"></div>
+                            <div class="face left"></div>
+                            <div class="face top"></div>
+                            <div class="face bottom"></div>
+                        </div>
+                    </div>
+                    <h1>CRAF</h1>
+                </div>
+                <div class="mission-text">
+                    <p>La mission du CRAF est de contribuer à la renaissance de Fria en mobilisant les ressources humaines, matérielles et financières nécessaires pour améliorer les conditions de vie des habitants.</p>
+                    <h3>Nos objectifs principaux :</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Améliorer l'accès à l'eau potable et à l'assainissement</li>
+                        <li><i class="fas fa-check-circle"></i> Renforcer les infrastructures de santé et l'accès aux soins médicaux</li>
+                        <li><i class="fas fa-check-circle"></i> Soutenir l'éducation par la rénovation d'écoles et la fourniture de matériel pédagogique</li>
+                        <li><i class="fas fa-check-circle"></i> Promouvoir le développement économique local par des initiatives génératrices de revenus</li>
+                        <li><i class="fas fa-check-circle"></i> Préserver et valoriser le patrimoine culturel et historique de Fria</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notre équipe -->
+    <section class="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Notre équipe</h2>
+                <p>Les personnes qui font avancer notre mission</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="1.png" alt="Mamadou Diallo">
+                    </div>
+                    <div class="member-info">
+                        <h3>Mamadou Diallo</h3>
+                        <p class="member-position">Président</p>
+                        <p class="member-bio">Ingénieur civil avec plus de 20 ans d'expérience dans le développement d'infrastructures en Afrique de l'Ouest.</p>
+                        <div class="member-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="2.png" alt="Fatoumata Bah">
+                    </div>
+                    <div class="member-info">
+                        <h3>Fatoumata Bah</h3>
+                        <p class="member-position">Vice-présidente</p>
+                        <p class="member-bio">Spécialiste en santé publique ayant travaillé avec plusieurs ONG internationales sur des projets de santé communautaire.</p>
+                        <div class="member-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="3.png" alt="Ibrahima Sow">
+                    </div>
+                    <div class="member-info">
+                        <h3>Ibrahima Sow</h3>
+                        <p class="member-position">Secrétaire Général</p>
+                        <p class="member-bio">Juriste de formation avec une expertise en droit des organisations et en gouvernance associative.</p>
+                        <div class="member-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="4.png" alt="Aïssatou Camara">
+                    </div>
+                    <div class="member-info">
+                        <h3>Aïssatou Camara</h3>
+                        <p class="member-position">Trésorière</p>
+                        <p class="member-bio">Comptable certifiée avec une expérience dans la gestion financière de projets de développement.</p>
+                        <div class="member-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="1.png" alt="Ousmane Barry">
+                    </div>
+                    <div class="member-info">
+                        <h3>Ousmane Barry</h3>
+                        <p class="member-position">Responsable des Projets</p>
+                        <p class="member-bio">Expert en gestion de projets avec une spécialisation dans les projets d'eau et d'assainissement.</p>
+                        <div class="member-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="2.png" alt="Mariama Sylla">
+                    </div>
+                    <div class="member-info">
+                        <h3>Mariama Sylla</h3>
+                        <p class="member-position">Responsable Communication</p>
+                        <p class="member-bio">Journaliste de formation avec une expertise en communication pour le développement et relations publiques.</p>
+                        <div class="member-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Nos valeurs -->
+    <section class="our-values">
+        <div class="container">
+            <div class="section-title-3d">
+                <h2>Nos valeurs</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Solidarité</h3>
+                    <p>Nous croyons en la force de l'entraide et de la mobilisation collective pour surmonter les défis.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Équité</h3>
+                    <p>Nous œuvrons pour que chaque habitant de Fria ait accès aux mêmes opportunités et services essentiels.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>Nous recherchons constamment des solutions créatives et durables adaptées aux réalités locales.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Transparence</h3>
+                    <p>Nous nous engageons à une gestion transparente des ressources et à rendre compte de nos actions.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Inclusion</h3>
+                    <p>Nous valorisons la diversité et encourageons la participation de tous dans nos projets.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Durabilité</h3>
+                    <p>Nous privilégions des solutions respectueuses de l'environnement et viables sur le long terme.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Rejoignez-nous -->
+    <section class="join-us">
+        <div class="container">
+            <div class="join-us-content">
+                <h2>Rejoignez notre cause</h2>
+                <p>Ensemble, nous pouvons faire la différence pour Fria et ses habitants. Que vous soyez originaire de Fria ou simplement sensible à notre cause, votre contribution est précieuse.</p>
+                <div class="join-buttons">
+                    <a href="membership.html" class="btn-primary">Devenir membre</a>
+                    <a href="donation.html" class="btn-secondary">Faire un don</a>
+                    <a href="contact.html" class="btn-outline">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nos partenaires -->
+    <section class="partners">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos partenaires</h2>
+                <p>Ils nous font confiance et nous soutiennent</p>
+            </div>
+            
+            <div class="partners-slider">
+                <div class="partner">
+                    <img src="1.png" alt="UNICEF">
+                </div>
+                <div class="partner">
+                    <img src="2.png" alt="OMS">
+                </div>
+                <div class="partner">
+                    <img src="3.png" alt="UNESCO">
+                </div>
+                <div class="partner">
+                    <img src="4.png" alt="PNUD">
+                </div>
+                <div class="partner">
+                    <img src="1.png" alt="Union Européenne">
+                </div>
+                <div class="partner">
+                    <img src="2.png" alt="Banque Mondiale">
+                </div>
+                <div class="partner">
+                    <img src="3.png" alt="Ministère de la Santé de Guinée">
+                </div>
+                <div class="partner">
+                    <img src="4.png" alt="Ministère de l'Éducation de Guinée">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <div class="newsletter-content">
+                <h2>Restez informé</h2>
+                <p>Inscrivez-vous à notre newsletter pour suivre nos actions et les actualités de Fria.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre adresse email" required>
+                    <button type="submit" class="btn-primary">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bouton de défilement vers le haut -->
+    <button class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="1.png" alt="Logo CRAF">
+                        <span>CRAF</span>
+                    </div>
+                    <p>L'Organisation Nationale des Ressortissants de Fria en Guinée œuvre pour le développement durable et l'amélioration des conditions de vie à Fria.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="projects.html">Projets</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="news.html">Actualités</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-projects">
+                    <h3>Nos projets</h3>
+                    <ul>
+                        <li><a href="projects.html#education">Éducation</a></li>
+                        <li><a href="projects.html#health">Santé</a></li>
+                        <li><a href="projects.html#water">Eau et assainissement</a></li>
+                        <li><a href="projects.html#agriculture">Agriculture</a></li>
+                        <li><a href="projects.html#environment">Environnement</a></li>
+                        <li><a href="projects.html#infrastructure">Infrastructure</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Siège social: Quartier Alsace, Fria, Guinée</li>
+                        <li><i class="fas fa-phone"></i> +224 622 33 44 55</li>
+                        <li><i class="fas fa-envelope"></i> contact@onrg-guinee.org</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 CRAF - Collectif des Ressortissants et Amis de Fria en Guinée. Yattara Ousmane Tous droits réservés.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Politique de confidentialité</a>
+                    <a href="terms.html">Conditions d'utilisation</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header">
+            <h3>Discussion en direct</h3>
+            <button class="close-chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message system">
+                <p>Bienvenue sur le chat du CRAF ! Comment pouvons-nous vous aider ?</p>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Écrivez votre message...">
+            <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+    <script src="about.js"></script>
+    <script src="animations.js"></script>
+    <script src="js/chat.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</body>
+</html>
+
