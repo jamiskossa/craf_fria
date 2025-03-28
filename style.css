@@ -946,7 +946,7 @@ footer {
 /* ===== ABOUT PAGE STYLES ===== */
 .about-banner {
     height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/banniere.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('banniere.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -1115,7 +1115,7 @@ footer {
 
 .join-us {
     padding: 5rem 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/join-us-bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('banniere.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
