@@ -291,7 +291,7 @@ nav {
 
 /* ===== HERO SLIDESHOW ===== */
 .hero-slideshow {
-    height: 100vh;
+    height: 80vh;
     position: relative;
     overflow: hidden;
     margin-top: var(--header-height);
@@ -945,8 +945,8 @@ footer {
 
 /* ===== ABOUT PAGE STYLES ===== */
 .about-banner {
-    height: 50vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/fria-panorama.jpg');
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/banniere.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -1180,8 +1180,8 @@ footer {
 
 /* ===== GALLERY PAGE STYLES ===== */
 .gallery-banner {
-    height: 50vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/gallery-banner.jpg');
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('banniere.png');
     background-size: cover;
     background-position: center;
     display: flex;

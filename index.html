@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -62,7 +63,7 @@
                 </div>
             </div>
             <div class="slide">
-                <img src="3.png" alt="Cité d'Alumine de Fria">
+                <img src="banniere.png" alt="Cité d'Alumine de Fria">
                 <div class="slide-content">
                     <h2 class="animated-title">Jadis le Petit Paris de Guinée</h2>
                     <p>Redonnons à Fria sa splendeur d'antan</p>
@@ -70,7 +71,7 @@
                 </div>
             </div>
             <div class="slide">
-                <img src="2.png" alt="Projets de développement à Fria">
+                <img src="banniere.png" alt="Projets de développement à Fria">
                 <div class="slide-content">
                     <h2 class="animated-title">Nos actions concrètes</h2>
                     <p>Des projets pour améliorer la vie des habitants</p>
@@ -79,13 +80,13 @@
             </div>
         </div>
         <div class="slide-controls">
-            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="prev-slide" title="Diapositive précédente"><i class="fas fa-chevron-left"></i></button>
             <div class="slide-dots">
                 <span class="dot active" data-slide="0"></span>
                 <span class="dot" data-slide="1"></span>
                 <span class="dot" data-slide="2"></span>
             </div>
-            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+            <button class="next-slide" title="Diapositive suivante"><i class="fas fa-chevron-right"></i></button>
         </div>
     </section>
 
@@ -406,7 +407,7 @@
     
 
     <!-- Bouton de défilement vers le haut -->
-    <button class="scroll-top">
+    <button class="scroll-top" title="Retour en haut de la page">
         <i class="fas fa-arrow-up"></i>
     </button>
 
@@ -421,11 +422,11 @@
                     </div>
                     <p>L'Organisation Nationale des Ressortissants de Fria en Guinée œuvre pour le développement durable et l'amélioration des conditions de vie à Fria.</p>
                     <div class="social-links">
-                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 
@@ -479,7 +480,7 @@
     <div class="chat-widget" id="chatWidget">
         <div class="chat-header">
             <h3>Discussion en direct</h3>
-            <button class="close-chat"><i class="fas fa-times"></i></button>
+            <button class="close-chat" title="Fermer le chat"><i class="fas fa-times"></i></button>
         </div>
         <div class="chat-messages" id="chatMessages">
             <div class="message system">
@@ -488,7 +489,7 @@
         </div>
         <div class="chat-input">
             <input type="text" id="messageInput" placeholder="Écrivez votre message...">
-            <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+            <button id="sendMessage" title="Envoyer le message"><i class="fas fa-paper-plane"></i></button>
         </div>
     </div>
 

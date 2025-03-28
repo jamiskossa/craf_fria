@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - CRAF</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Effet de particules en arrière-plan -->
+    <div id="particles-background"></div>
+
+    <!-- Header avec logo 3D et menu responsive -->
+    <header>
+        <div class="logo-container">
+            <div class="logo-3d-cube">
+                <div class="cube">
+                    <div class="face front"></div>
+                    <div class="face back"></div>
+                    <div class="face right"></div>
+                    <div class="face left"></div>
+                    <div class="face top"></div>
+                    <div class="face bottom"></div>
+                </div>
+            </div>
+            <h1>CRAF</h1>
+        </div>
+        <nav>
+            <div class="toggle-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html" class="active">À propos</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="blog.html">Actualités</a></li>
+                <li><a href="events.html">Événements</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="membership.html" class="btn-primary">Adhérer</a></li>
+                <li><a href="donation.html" class="btn-secondary">Faire un don</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Bannière Galerie -->
+    <section class="gallery-banner">
+        <div class="gallery-banner-content">
+            <h1 class="animated-title">Galerie</h1>
+            <p>Découvrez Fria en images et vidéos</p>
+        </div>
+    </section>
+
+    <!-- Filtres de la galerie -->
+    <section class="gallery-filters">
+        <div class="container">
+            <div class="filters-buttons">
+                <button class="filter-btn active" data-filter="all">Tout</button>
+                <button class="filter-btn" data-filter="fria">Fria</button>
+                <button class="filter-btn" data-filter="projects">Nos projets</button>
+                <button class="filter-btn" data-filter="events">Événements</button>
+                <button class="filter-btn" data-filter="history">Histoire</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Photos -->
+    <section class="photo-gallery">
+        <div class="container">
+            <div class="section-title-3d">
+                <h2>Photos</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="fria">
+                    <a href="king.png" data-lightbox="gallery" data-title="Vue aérienne de Fria">
+                        <img src="king.png" alt="Vue aérienne de Fria">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h3>Vue aérienne de Fria</h3>
+                                <p>2022</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item" data-category="fria">
+                    <a href="4.png" data-lightbox="gallery" data-title="Centre-ville de Fria">
+                        <img src="3.png" alt="Centre-ville de Fria">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h3>Centre-ville de Fria</h3>
+                                <p>2021</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item" data-category="projects">
+                    <a href="2.png" data-lightbox="gallery" data-title="Construction d'un puits">
+                        <img src="3.png" alt="Construction d'un puits">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h3>Construction d'un puits</h3>
+                                <p>Janvier 2023</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item" data-category="projects">
+                    <a href="1.png" data-lightbox="gallery" data-title="Rénovation de l'école primaire">
+                        <img src="4.png" alt="Rénovation de l'école primaire">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h3>Rénovation de l'école primaire</h3>
+                                <p>Mars 2023</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <a href="2.png" data-lightbox="gallery" data-title="Gala de charité à Paris">
+                        <img src="4.png" alt="Gala de charité à Paris">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h3>Gala de charité à Paris</h3>
+                                <p>Avril 2023</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <a href="3.png" data-lightbox="gallery" data-title="Distribution de fournitures scolaires">
+                        <img src="1.png" alt="Distribution de fournitures scolaires">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h3>Distribution de fournitures scolaires</h3>
+                                <p>Septembre 2022</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item" data-category="history">
+                    <a href="3.png" data-lightbox="gallery" data-title="Fria dans les années 1960">
+                        <img src="4.png" alt="Fria dans les années 1960">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h3>Fria dans les années 1960</h3>
+                                <p>Archive historique</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item" data-category="history">
+                    <a href="1.png" data-lightbox="gallery" data-title="L'usine Friguia dans les années 1970">
+                        <img src="2.png" alt="L'usine Friguia dans les années 1970">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-info">
+                                <h3>L'usine Friguia dans les années 1970</h3>
+                                <p>Archive historique</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Ajoutez plus d'images selon les catégories -->
+            </div>
+            <div class="load-more-container">
+                <button class="btn-load-more">Voir plus de photos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Vidéos -->
+    <section class="video-gallery">
+        <div class="container">
+            <div class="section-title-3d">
+                <h2>Vidéos</h2>
+            </div>
+            <div class="video-grid">
+                <div class="video-item" data-category="fria">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1sppvCmpV5c" title="Découverte de Fria" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Découverte de Fria</h3>
+                        <p>Un tour d'horizon de la ville de Fria aujourd'hui</p>
+                    </div>
+                </div>
+                <div class="video-item" data-category="history">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1sppvCmpV5c" title="Fria, histoire d'une cité industrielle" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Fria, histoire d'une cité industrielle</h3>
+                        <p>Documentaire sur l'histoire de Fria et de l'usine Friguia</p>
+                    </div>
+                </div>
+                <div class="video-item" data-category="projects">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1sppvCmpV5c" title="Projet d'accès à l'eau potable" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Projet d'accès à l'eau potable</h3>
+                        <p>Reportage sur notre projet de construction de puits dans les quartiers de Fria</p>
+                    </div>
+                </div>
+                <div class="video-item" data-category="events">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1sppvCmpV5c" title="Gala annuel du CRAF 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Gala annuel du CRAF 2023</h3>
+                        <p>Résumé de notre gala de charité organisé à Paris</p>
+                    </div>
+                </div>
+            </div>
+            <div class="load-more-container">
+                <button class="btn-load-more">Voir plus de vidéos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Témoignages</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Grâce au CRAF, notre quartier a maintenant accès à l'eau potable. Cela a changé notre quotidien et amélioré notre santé."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="2.png" alt="Mariama Camara">
+                        <div class="author-info">
+                            <h3>Mariama Camara</h3>
+                            <p>Habitante de Fria</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"La rénovation de notre école a permis d'améliorer considérablement les conditions d'apprentissage de nos élèves. Merci au CRAF pour son soutien."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="3.png" alt="Ibrahim Diallo">
+                        <div class="author-info">
+                            <h3>Ibrahim Diallo</h3>
+                            <p>Directeur d'école à Fria</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"En tant que membre du CRAF, je suis fier de contribuer à des projets concrets qui améliorent la vie des habitants de Fria."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="4.png" alt="Fatoumata Bah">
+                        <div class="author-info">
+                            <h3>Fatoumata Bah</h3>
+                            <p>Membre du CRAF</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Partagez vos photos -->
+    <section class="share-photos">
+        <div class="container">
+            <div class="share-photos-content">
+                <h2>Partagez vos photos de Fria</h2>
+                <p>Vous avez des photos ou vidéos de Fria que vous souhaitez partager ? Envoyez-les nous pour enrichir notre galerie.</p>
+                <a href="contact.html" class="btn-primary">Nous contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <div class="newsletter-content">
+                <h2>Restez informé</h2>
+                <p>Inscrivez-vous à notre newsletter pour suivre nos actions et les actualités de Fria.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre adresse email" required>
+                    <button type="submit" class="btn-primary">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="1.png" alt="Logo CRAF">
+                        <span>CRAF</span>
+                    </div>
+                    <p>L'Organisation Nationale des Ressortissants de Fria en Guinée œuvre pour le développement durable et l'amélioration des conditions de vie à Fria.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="projects.html">Projets</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="news.html">Actualités</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-projects">
+                    <h3>Nos projets</h3>
+                    <ul>
+                        <li><a href="projects.html#education">Éducation</a></li>
+                        <li><a href="projects.html#health">Santé</a></li>
+                        <li><a href="projects.html#water">Eau et assainissement</a></li>
+                        <li><a href="projects.html#agriculture">Agriculture</a></li>
+                        <li><a href="projects.html#environment">Environnement</a></li>
+                        <li><a href="projects.html#infrastructure">Infrastructure</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Siège social: Quartier Alsace, Fria, Guinée</li>
+                        <li><i class="fas fa-phone"></i> +224 622 33 44 55</li>
+                        <li><i class="fas fa-envelope"></i> contact@onrg-guinee.org</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 CRAF - Collectif des Ressortissants et Amis de Fria en Guinée. Yattara Ousmane Tous droits réservés.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Politique de confidentialité</a>
+                    <a href="terms.html">Conditions d'utilisation</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header">
+            <h3>Discussion en direct</h3>
+            <button class="close-chat" title="Fermer le chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message system">
+                <p>Bienvenue sur le chat du CRAF ! Comment pouvons-nous vous aider ?</p>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Écrivez votre message...">
+            <button id="sendMessage" title="Envoyer le message"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="main.js"></script>
+    <script src="animations.js"></script>
+    <script src="gallery.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
+
