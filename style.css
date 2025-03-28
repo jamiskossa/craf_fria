@@ -1121,6 +1121,7 @@ footer {
     background-attachment: fixed;
     color: var(--light-text);
     text-align: center;
+    height: 80vh;
 }
 
 .join-us-content h2 {
